@@ -1,0 +1,50 @@
+body{
+    font-family: inherit;
+    background-color: rgb(188, 216, 232);
+}
+.container-fluid{
+width: 60%;
+margin: auto
+}
+.input{
+    text-align: end;
+}
+
+.container-fluid2{
+    background: linear-gradient(50deg,rgb(0,0,0,), #009bf4);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+nav{
+    height: 50%;
+    width: 75%;
+    margin: auto;
+  padding: 10%;
+  padding-left: 15%;
+}
+button{
+background-color: rgb(220, 0, 0);
+color: white;
+border-radius: 50%;
+}
+footer{
+    height: 50%;
+    width: 75%;
+    margin: auto;
+    padding-top: 6px;
+    text-align: right;
+    
+}
+.pantalla_o{
+    display: none;
+}
+.pantalla_2{
+    display: block;
+}
+.pantalla_1{
+    display: block;
+}

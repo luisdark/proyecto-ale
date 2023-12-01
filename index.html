@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estillo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    
+    <title>Heladeriadefinitiva</title>
+</head>
+<body>
+    <div id="contenedor">
+<br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imagenes/images.jpeg" width="20%" height="20%"  < h1><b>Heladeria_crazy2</b></h1></a>
+            </div>
+        </nav>
+            <div class="container-fluid2">
+
+              <div id="pantalla_1" class="pantalla_1 animate_animated">
+                <div class="row">
+                  <div class="col-lg-6">
+                      <br>
+                      <button>
+                    <img src="imagenes/fresa ale 3.png" width="20%" height="20%"  id="Barquilla de fresa" onclick="pedido1() " <h6 >Barquilla de fresa</h6>
+                    </button>
+                    <br>
+                    <br>
+                    <button>
+                    <img id=" imagen" src="imagenes/barquillon ale 4.png" width="18%" height="18%" id="barquilla de chocolate" onclick="pedido2()" <h6 >barquilla de chocolate</h6>
+                    </button>
+                    <br>                  </div>
+                  <div class="col-lg-6">
+                    <br>
+                    <button>
+                    <img src="imagenes/choco ale 1.png" width="7%" height="7%"  id="paleta de chocolate" onclick="pedido3()" < <<h6>paleta de chocolate</h6>
+                    </button>
+                    <br>
+                    <br>
+                    <button>
+                    <img src="imagenes/vainila ale 2.png" width="20%" height="20%" id="barquilla de vainilla" onclick="pedido4()" <h6 >barquilla de vainilla</h6>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div id="pantalla_2" class="pantalla_o">
+              <div class="row">
+                <div class="col-lg-12">
+                  <br>
+                  <br>
+                  <h1 id="helado">helado</h1>
+                  <h1 id="precio">precio</h1>
+                  <input type="number"  name="cantidad" id="numero">
+                  <br>
+                  <br>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-danger color-black" type="button" onclick="listo()" id="listo">Listo tu pedido</button>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              </div>
+
+            </div>
+
+
+        </div>
+        <div class="container-fluid3">
+          <footer class="bg-danger">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>pagar:</h1>
+              </div>
+              <div class="col-lg-1">
+                <h1 id="resultado">0</h1>
+                <div class="col-lg-2">
+                  <h1>$</h1>
+                </div>
+              </div>
+              
+              <div class="col-lg-2">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-dark coolor-black me-md-2" onclick="orden()" type="button">Ordenar</button>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+<script>
+  function pedido1(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:Barquilla de fresa"
+    document.getElementById("precio").innerHTML="Precio:1$"
+    if(pedido1=pedido1){
+      h=1
+    }
+  }
+  function pedido2(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:barquilla de chocolate"
+    document.getElementById("precio").innerHTML="Precio:1.5$"
+    if(pedido2=pedido2){
+      h=1.5
+    }
+  }
+  function pedido3(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:paleta de chocolate"
+    document.getElementById("precio").innerHTML="Precio:1.2$"
+    if(pedido3=pedido3){
+      h=1.2
+    }
+  }
+  function pedido4(){
+    document.getElementById("pantalla_1").classList.add("pantalla_o")
+    document.getElementById("pantalla_1").classList.remove("pantalla_1")
+    document.getElementById("pantalla_2").classList.add("pantalla_2")
+    document.getElementById("helado").innerHTML="Helado:barquilla de vainilla"
+    document.getElementById("precio").innerHTML="Precio:1$"
+    if(pedido4=pedido4){
+      h=1
+    }
+  }
+  t=0;
+  function listo(){
+    document.getElementById("pantalla_2").classList.remove("pantalla_2")
+    document.getElementById("pantalla_1").classList.add("pantalla_1")
+    n1=document.getElementById("numero").value;
+    r=Number(n1)*Number(h)
+    t=Number(t)+Number(r)
+    document.getElementById("resultado").innerHTML=t;
+  }
+  function orden(){
+    document.getElementById("pantalla_2").classList.remove("pantalla_2")
+    document.getElementById("pantalla_1").classList.add("pantalla_1")
+    t=0;
+    document.getElementById("resultado").innerHTML=t;
+    alert("Gracias por su compras, vuelva pronto :)")
+  }
+</script>
+</html>
